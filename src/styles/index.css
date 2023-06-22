@@ -1,9 +1,27 @@
-@import './index.css';
+@import './normalize.css';
 
 :root {
     font-size: 62.5%;
+    --header: 10rem;
+    --footer: 6rem;
 }
 
 body {
     font-size: 1.6rem;
+}
+
+body > * {
+    border: 1px solid black;
+}
+
+#header {
+    height: var(--header);
+}
+
+#main {
+    min-height: calc(100vh - var(--header) - var(--footer));
+}
+
+#footer {
+    height: var(--footer);
 }
