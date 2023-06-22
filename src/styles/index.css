@@ -1,13 +1,12 @@
 @import './normalize.css';
 
 :root {
-    font-size: 62.5%;
-    --header: 10rem;
-    --footer: 6rem;
-}
-
-body {
-    font-size: 1.6rem;
+    --header: 60PX;
+    --footer: 40PX;
+    --color1: #131313;
+    --color2: #2b2b2b;
+    --color3: #86868b;
+    --color4: #1561f0;
 }
 
 body > * {
@@ -16,12 +15,40 @@ body > * {
 
 #header {
     height: var(--header);
+    background-color: var(--color2);
+}
+
+#header > * {
+    color: white;
 }
 
 #main {
+    background-color: var(--color1);
     min-height: calc(100vh - var(--header) - var(--footer));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
 
 #footer {
     height: var(--footer);
+    background-color: var(--color2);
+}
+
+#footer > * {
+    color: var(--color4)
+}
+
+/* HOME */
+#caja-avatar {
+    background-color: var(--color2);
+}
+#caja-presentacion {
+    background-color: var(--color3);
+}
+
+/* MATERIAL UI */
+.MuiTypography-root {
+    margin: 10px;
 }
