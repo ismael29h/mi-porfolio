@@ -1,4 +1,3 @@
-import Typography from '@mui/material/Typography';
 import css from './Home.module.css';
 
 export default function Home() {

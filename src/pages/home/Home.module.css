@@ -26,7 +26,8 @@
     justify-content: center;
 }
 
-.caja > .presentacion > h3,p {
+.caja > .presentacion > h3,
+p {
     margin: 10px;
 }
 
@@ -34,7 +35,7 @@
     text-align: justify;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .caja {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
@@ -45,5 +46,4 @@
     .caja > .presentacion {
         border-radius: 0 0 10px 10px;
     }
-
 }

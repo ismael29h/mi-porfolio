@@ -1,8 +1,8 @@
 @import './normalize.css';
 
 :root {
-    --header: 60PX;
-    --footer: 40PX;
+    --header: 60px;
+    --footer: 40px;
     --color1: #131313;
     --color2: #2b2b2b;
     --color3: #86868b;
@@ -37,7 +37,7 @@ body > * {
 }
 
 #footer > * {
-    color: var(--color4)
+    color: var(--color4);
 }
 
 /* HOME */
@@ -49,6 +49,9 @@ body > * {
 }
 
 /* MATERIAL UI */
-.MuiTypography-root {
-    margin: 10px;
+.Mui-expanded > .MuiAccordionSummary-root {
+    text-transform: uppercase;
+}
+.MuiImageListItem-img {
+    border-radius: 10px;
 }
