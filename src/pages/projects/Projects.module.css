@@ -1,0 +1,31 @@
+.allProjects {
+    width: 100%;
+}
+
+.job {
+    border: 1px solid blue;
+}
+
+.job > h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project > h3, p {
+    max-width: 600px;
+}
+
+
+.project > h3 {
+    width: 100%;
+}
+
+.project > p {
+    text-align: justify;
+}
