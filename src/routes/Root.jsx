@@ -1,9 +1,10 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Home from '../pages/home/Home.jsx';
 import Skills from '../pages/skills/Skills.jsx';
 import Projects from '../pages/projects/Projects.jsx';
+import Contact from '../pages/contact/Contact.jsx';
 import Error404 from '../pages/error404/Error404.jsx';
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: '/proyectos',
         element: <Projects />,
+    },
+    {
+        path: '/contacto',
+        element: <Contact />,
     },
 ]);
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import './styles/index.css';
+
 import Root from './routes/Root.jsx';
+
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
-import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('header')).render(<Header />);
 

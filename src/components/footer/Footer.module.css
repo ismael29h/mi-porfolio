@@ -1,0 +1,14 @@
+.creditos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto > a {
+    margin: 0 10px;
+}
+
+.derechos {
+    color: #86868b;
+}

@@ -1,54 +1,21 @@
 import { useState } from 'react';
+
+import css from './Skills.module.css';
+
+import misDatos from '../../assets/misdatos.json';
+
 import Backdrop from '@mui/material/Backdrop';
-
 import Button from '@mui/material/Button';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
-import css from './Skills.module.css';
-import { ListItemSecondaryAction } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-// INFORMACIÓN SOBRE CERTIFICADOS OBTENIDOS
-const SKILLS = [
-    {
-        name: 'La ruta del desarrollador web',
-        info: 'Certificado por EDteam',
-        image: 'src/assets/images/certificates/1.png',
-    },
-    {
-        name: 'Sit commodo Lorem',
-        info: 'Laborum ex duis exercitation deserunt minim ad ipsum sint velit velit eiusmod.',
-        image: 'src/assets/images/certificates/1.png',
-    },
-    {
-        name: 'Consequat',
-        info: 'Cupidatat commodo consequat adipisicing laborum non exercitation voluptate ullamco in aliquip laboris consequat irure.',
-        image: 'src/assets/images/certificates/1.png',
-    },
-    {
-        name: 'Do ut ut fugiat',
-        info: 'Sunt ex non ad velit est adipisicing officia ut do excepteur ut excepteur.',
-        image: 'src/assets/images/certificates/1.png',
-    },
-];
-
-// RUTA A LOGOS DE APTITUDES
-const LOGOS = [
-    'src/assets/images/logos/css3.jpg',
-    'src/assets/images/logos/html5.jpg',
-    'src/assets/images/logos/javascript.jpg',
-    'src/assets/images/logos/mysql.jpg',
-    'src/assets/images/logos/python.jpg',
-    'src/assets/images/logos/react.jpg',
-];
-
+// CERTIFICADOS Y APTITUDES
 export default function Skills() {
     const [open, setOpen] = useState(false);
     const [expanded, setExpanded] = useState(false);
@@ -65,9 +32,10 @@ export default function Skills() {
 
     return (
         <div className={css.habilidades}>
+            {/* CERTIFICADOS */}
             <div className={css.certificados}>
                 <h2>CERTIFICADOS</h2>
-                {SKILLS.map((certif, indice) => (
+                {misDatos.skills.map((certif, indice) => (
                     <Accordion
                         key={indice}
                         expanded={expanded === indice}
@@ -75,6 +43,7 @@ export default function Skills() {
                         sx={{
                             bgcolor: '#86868b',
                             color: '#131313',
+                            width: '100%',
                         }}
                     >
                         <AccordionSummary
@@ -82,16 +51,20 @@ export default function Skills() {
                             aria-controls={`${certif}a-content`}
                             id={`${indice}a-header`}
                         >
+                            {/* TITULO DEL CERTIFICADO */}
                             <h3>{certif.name}</h3>
                         </AccordionSummary>
-                        <AccordionDetails sx={{ 'text-align': 'left' }}>
-                            <p>
-                                {certif.info}
+                        <AccordionDetails sx={{ textAlign: 'left' }}>
+                            {/* DESCRIPCIÓN CORTA DEL CERTIFICADO */}
+                            <p>{certif.info}</p>
+                            <br />
+                            {/* CAPTURA DEL CERTIFICADO */}
+                            <div className={css.center}>
                                 <Button onClick={handleOpen}>
+                                    Mostrar...
                                     <OpenInNewIcon />
                                 </Button>
-                            </p>
-
+                            </div>
                             <Backdrop
                                 sx={{
                                     color: '#fff',
@@ -101,22 +74,25 @@ export default function Skills() {
                                 onClick={handleClose}
                             >
                                 <img
-                                    src={certif.image}
+                                    src={`./images/certificates/${certif.image}`}
                                     alt={certif.name}
-                                    width='300px'
-                                    height='auto'
                                 />
                             </Backdrop>
                         </AccordionDetails>
                     </Accordion>
                 ))}
             </div>
+            {/* SIMPLE CONTENEDOR DE LOGOS */}
             <div className={css.aptitudes}>
                 <h2>APTITUDES</h2>
-                <ImageList sx={{ width: 500, height: 'auto' }} cols={3}>
-                    {LOGOS.map((imagen, indice) => (
+                <ImageList gap={6} cols={3}>
+                    {misDatos.logosAbility.map((imagen, indice) => (
                         <ImageListItem key={indice}>
-                            <img src={imagen} alt='LOGO' loading='lazy' />
+                            <img
+                                src={`./images/logos/${imagen}`}
+                                alt='LOGO'
+                                loading='lazy'
+                            />
                         </ImageListItem>
                     ))}
                 </ImageList>

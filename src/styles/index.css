@@ -1,21 +1,31 @@
 @import './normalize.css';
 
 :root {
-    --header: 60px;
-    --footer: 40px;
+    --header: 90px;
+    --footer: 70px;
     --color1: #131313;
     --color2: #2b2b2b;
     --color3: #86868b;
     --color4: #1561f0;
 }
 
-body > * {
-    border: 1px solid black;
+a {
+    color: var(--color4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #header {
     height: var(--header);
     background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color3);
 }
 
 #header > * {
@@ -24,6 +34,10 @@ body > * {
 
 #main {
     background-color: var(--color1);
+    background-image: url('/images/fondos/art.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     min-height: calc(100vh - var(--header) - var(--footer));
     display: flex;
     align-items: center;
@@ -49,9 +63,18 @@ body > * {
 }
 
 /* MATERIAL UI */
-.Mui-expanded > .MuiAccordionSummary-root {
-    text-transform: uppercase;
-}
+
 .MuiImageListItem-img {
     border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.MuiBackdrop-root > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.MuiAccordion-root .Mui-expanded {
+    font-style: italic;
 }

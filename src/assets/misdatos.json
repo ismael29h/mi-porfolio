@@ -1,0 +1,155 @@
+{
+    "readme": "Este archivo json es usado para administrar el contenido",
+    "welcome": "Soy HERNÁN Ismael, un entusiasta desarrollador web junior con experiencia en tecnologías como SQL, Javascript, HTML, CSS, React, Python y Django. \nAunque todavía estoy en una etapa temprana de mi carrera, estoy emocionado por aprender y crecer en el campo de la programación.",
+    "linkPorfolio": "http://127.0.0.1:5173",
+    "personal": {
+        "names": "HERNÁN Ismael Norberto Jesús",
+        "email": "ismael29@gmail.com",
+        "github": "https://github.com/ismael29h/",
+        "linkedin": "https://www.linkedin.com/in/ismael29h/",
+        "formsubmit": "https://formsubmit.co/bdf215f3e63869d165a52899ee8e1c85"
+    },
+    "logosAbility": [
+        "css3.jpg",
+        "html5.jpg",
+        "javascript.jpg",
+        "mysql.jpg",
+        "python.jpg",
+        "react.jpg"
+    ],
+    "skills": [
+        {
+            "name": "Desarrollo Web: Python/Django y Base de Datos: SQL",
+            "info": "Aquí se profundiza en herramientas básicas para desarrollar aplicaciones web con bases de datos. Se profundiza en conocimientos sobre Python y Django, y bases de datos con SQL Server y MySQL.",
+            "image": "DesarrolloWeb.png"
+        },
+        {
+            "name": "Especialización en Tecnologías de Desarrollo: REACT",
+            "info": "Este curso permite continuar con el perfeccionamiento en lenguajes especíﬁcos, y permite orientar la formación hacia los perﬁles laborales requeridos por las empresas locales. Se profundiza el desarrollo web en front end con React JS.",
+            "image": "React.png"
+        },
+        {
+            "name": "Especialización en Tecnologías de Desarrollo: Testing",
+            "info": "Este curso permite continuar con el perfeccionamiento en lenguajes especíﬁcos, y permite orientar la formación hacia los perﬁles laborales requeridos por las empresas locales. Se profundiza el desarrollo web en herramientas de testing para desarrollos.",
+            "image": "Testing.png"
+        },
+        {
+            "name": "Inglés para Programadores",
+            "info": "En este curso se aprende habilidades básicas para el buen desenvolvimiento del idioma inglés, con clases sincrónicas y actividades supervizadas.",
+            "image": "InglesBásico.png"
+        },
+        {
+            "name": "Primeros pasos del desarrollo frontend",
+            "info": "En el marco del programa 'Argentina Programa 4.0', se fortalece el conocimiento en el desarrollo frontend con HTML5, CSS3 y JavaScript.",
+            "image": "FrontEnd.png"
+        },
+        {
+            "name": "Introducción al Desarrollo de Videojuegos",
+            "info": "Se aprende los fundamentos del desarrollo de videojuegos. Para finalizar este curso fue necesario programar un videojuego simple en Godot.",
+            "image": "PixeLAB2.png"
+        },
+        {
+            "name": "Introducción a la Programación",
+            "info": "Este curso es la etapa de 1 del trayecto formativo del 'Informatorio', un programa del Gobierno del Chaco junto a empresas del Polo IT Chaco, la UTN-FRRe y la UNCAUS.",
+            "image": "IntroduccionProgramación.png"
+        },
+        {
+            "name": "La ruta del desarrollador web",
+            "info": "Aquí se obtiene conocimientos generales sobre los roles y rutas que existen para ser un programador.",
+            "image": "CursoWeb.png"
+        }
+    ],
+    "projects": [
+        {
+            "site": "INFORMATORIO",
+            "projects": [
+                {
+                    "name": "Aplicación Web del tipo Blog",
+                    "desc": "Destinado para ser donado a la Fundación Orquesta 'Vientos de Cambio'.\nSe trata de una aplicación web desarrollada con tecnología Django. La misma, es una página web dinámica que hace uso de una base de datos SQL.",
+                    "linkCode": "https://github.com/ismael29h/info2022",
+                    "preview": ""
+                },
+                {
+                    "name": "Buscador de Noticias",
+                    "desc": "Cómo parte del proyecto final del curso de React.\nUna aplicación web del tipo buscador y siguiendo una series de pautas  (impuesta por un supuesto cliente) para considerarse un trabajo terminado.\nLa aplicación hace uso de un endpoint para realizar búsquedas de noticias.",
+                    "linkCode": "https://github.com/ismael29h/react2022integrador",
+                    "preview": ""
+                }
+            ]
+        },
+        {
+            "site": "freeCodeCamp",
+            "projects": [
+                {
+                    "name": "Calculadora",
+                    "desc": "Aplicación que debe cumplir con la utilización de cualquier combinación de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux y/o jQuery para considerar este proyecto cómo satifactorio.\nSe debió cumplir ciertas pautas proporcionadas por freeCodeCamp.",
+                    "linkCode": "https://codepen.io/ismael29h/pen/abRMwjR",
+                    "preview": "CodePen"
+                },
+                {
+                    "name": "Máquina de frases aleatorias",
+                    "desc": "Aplicación que debe cumplir con la utilización de cualquier combinación de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux y/o jQuery para considerar este proyecto cómo satifactorio.\nSe debió cumplir ciertas pautas proporcionadas por freeCodeCamp.",
+                    "linkCode": "https://codepen.io/ismael29h/pen/WNaZxYP",
+                    "preview": "CodePen"
+                },
+                {
+                    "name": "Caja de Ritmo",
+                    "desc": "Aplicación que debe cumplir con la utilización de cualquier combinación de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux y/o jQuery para considerar este proyecto cómo satifactorio.\nSe debió cumplir ciertas pautas proporcionadas por freeCodeCamp.",
+                    "linkCode": "https://codepen.io/ismael29h/pen/mdzavez",
+                    "preview": "CodePen"
+                },
+                {
+                    "name": "25+5 Clock",
+                    "desc": "Aplicación que debe cumplir con la utilización de cualquier combinación de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux y/o jQuery para considerar este proyecto cómo satifactorio.\nSe debió cumplir ciertas pautas proporcionadas por freeCodeCamp.",
+                    "linkCode": "https://codepen.io/ismael29h/pen/NWOZoZB",
+                    "preview": "CodePen"
+                },
+                {
+                    "name": "Previsualizador de Markdown",
+                    "desc": "Aplicación que debe cumplir con la utilización de cualquier combinación de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux y/o jQuery para considerar este proyecto cómo satifactorio.\nSe debió cumplir ciertas pautas proporcionadas por freeCodeCamp.",
+                    "linkCode": "https://codepen.io/ismael29h/pen/NWOMgvq",
+                    "preview": "CodePen"
+                }
+            ]
+        },
+        {
+            "site": "Argentina Programa 4.0",
+            "projects": [
+                {
+                    "name": "Currículum Vitae de Ejemplo",
+                    "desc": "Proyecto final simple del curso 'Primeros pasos del desarrollo fontend'.\nConsiste en simular una hoja de un Currículum Vitae utilizando HTML, CSS y Javascript.",
+                    "linkCode": "https://github.com/ismael29h/cv-academy",
+                    "preview": "https://ismael29h.github.io/cv-academy/"
+                }
+            ]
+        },
+        {
+            "site": "PIXEL LAB",
+            "projects": [
+                {
+                    "name": "Saltarina",
+                    "desc": "Minijuego de plataforma para PC realizado en Godot Engine cómo parte del proyecto final de PixelLab.",
+                    "linkCode": "https://github.com/ismael29h/juego-plataforma",
+                    "preview": "https://ismael29h.github.io/pixel-godot/"
+                },
+                {
+                    "name": "Meteoritos",
+                    "desc": "Minijuego del tipo 'Shmup' para PC realizado en Godot Engine.",
+                    "linkCode": "https://github.com/ismael29h/mete0rit0s-juego",
+                    "preview": ""
+                }
+            ]
+        },
+        {
+            "site": "Otros",
+            "projects": [
+                {
+                    "name": "Mi Porfolio",
+                    "desc": "Este mismo porfolio. He procurado que sea sencillo, responsivo y escalable.\nEste proyecto se ha apoyado en Vite.js, React Router y Material UI cómo piezas fundamentales.",
+                    "linkCode": "https://github.com/ismael29h/porfolio",
+                    "preview": ""
+                }
+            ]
+        }
+    ]
+}

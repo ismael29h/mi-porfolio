@@ -1,0 +1,28 @@
+.errorCaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+
+.errorCaja > h2 {
+    position: absolute;
+    animation-name: error404;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.errorCaja > img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes error404 {
+    50% {
+        font-size: 300%;
+        color: red;
+    }
+}

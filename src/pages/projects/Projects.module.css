@@ -1,31 +1,63 @@
 .allProjects {
-    width: 100%;
+    color: #1561f0;
+    margin-top: 20px;
 }
 
 .job {
-    border: 1px solid blue;
+    border-radius: 25px;
+    margin: -65px 25px 25px 25px;
+    padding: 25px;
+    min-width: 300px;
+    max-width: 600px;
 }
 
 .job > h2 {
     text-align: center;
-    text-transform: uppercase;
+    background-color: #2b2b2b;
+    padding: 4px;
+    border-radius: 10px;
+    color: #1561f0;
 }
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+    background-color: #86868b;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
 }
 
-.project > h3, p {
+.project > h3,
+p {
     max-width: 600px;
 }
 
-
 .project > h3 {
+    text-align: center;
     width: 100%;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 .project > p {
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.deploy {
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .allProjects {
+        margin-top: -50px;
+    }
+    .job {
+        margin: 0%;
+        padding: 0;
+    }
 }

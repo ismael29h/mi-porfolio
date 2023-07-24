@@ -2,8 +2,20 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    padding: 10px;
+    padding: 7px;
+    min-width: 250px;
     max-width: 600px;
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        #131313 40px,
+        #86868b 80px
+    );
+    animation-name: home;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .caja > .avatar {
@@ -11,11 +23,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 3px solid #1561f0;
+    border-right: none;
 }
 
 .caja > .avatar > img {
     border-radius: 50%;
     padding: 15px;
+    height: auto;
+    max-width: 150px;
+    border: 1px solid #1561f0;
 }
 
 .caja > .presentacion {
@@ -24,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 3px solid #1561f0;
 }
 
 .caja > .presentacion > h3,
@@ -32,6 +50,7 @@ p {
 }
 
 .caja > .presentacion > p {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
@@ -42,8 +61,28 @@ p {
     }
     .caja > .avatar {
         border-radius: 10px 10px 0 0;
+        border-bottom: none;
     }
     .caja > .presentacion {
         border-radius: 0 0 10px 10px;
+    }
+}
+
+@keyframes home {
+    33.3% {
+        background: repeating-linear-gradient(
+            45deg,
+            #86868b 0px,
+            transparent 40px,
+            #131313 80px
+        );
+    }
+    66.6% {
+        background: repeating-linear-gradient(
+            45deg,
+            #131313 0px,
+            #86868b 40px,
+            transparent 80px
+        );
     }
 }
