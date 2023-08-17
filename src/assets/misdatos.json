@@ -43,6 +43,11 @@
             "info": "En el marco del programa 'Argentina Programa 4.0', se fortalece el conocimiento en el desarrollo frontend con HTML5, CSS3 y JavaScript.",
             "image": "FrontEnd.png"
         },
+		{
+            "name": "Procesamiento de datos con Python",
+            "info": "Se explora las principales bibliotecas y herramientas de Python para trabajar con datos (realizar análisis, manipulación y limpieza de datos), y se domina las técnicas básicas de procesamiento de datos para extraer información valiosa para la toma de decisiones.",
+            "image": "ProcesamientoDatosPyton.png"
+        },
         {
             "name": "Introducción al Desarrollo de Videojuegos",
             "info": "Se aprende los fundamentos del desarrollo de videojuegos. Para finalizar este curso fue necesario programar un videojuego simple en Godot.",
