@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import css from './Header.module.css';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -113,13 +115,15 @@ export default function Header() {
                             ))}
                         </Menu>
                     </Box>
-                    <TerminalIcon
-                        sx={{
-                            display: { xs: 'flex', md: 'none' },
-                            mr: 1,
-                            transform: 'scale(1.2)',
-                        }}
-                    />
+                    <a href='/inicio'>
+                        <TerminalIcon
+                            sx={{
+                                display: { xs: 'flex', md: 'none' },
+                                mr: 1,
+                                transform: 'scale(1.2)',
+                            }}
+                        />
+                    </a>
                     <Typography
                         variant='h5'
                         component='h1'
@@ -135,7 +139,9 @@ export default function Header() {
                             marginLeft: '15px',
                         }}
                     >
-                        PORFOLIO
+                        <a href='/inicio' className={css.title}>
+                            PORFOLIO
+                        </a>
                     </Typography>
                     <Box
                         sx={{
