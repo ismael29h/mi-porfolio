@@ -51,7 +51,7 @@ p {
 
 .caja > .presentacion > p {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
