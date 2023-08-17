@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className={css.caja}>
             <div id='caja-avatar' className={css.avatar}>
-                <img src='./images/avatar/avatar.png' alt='avatar' />
+                <img src='./images/avatar/avatar.jpg' alt='avatar' />
             </div>
             <div id='caja-presentacion' className={css.presentacion}>
                 <h3>¡Bienvenido!</h3>

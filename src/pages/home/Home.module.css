@@ -32,7 +32,6 @@
     padding: 15px;
     height: auto;
     max-width: 150px;
-    border: 1px solid #1561f0;
 }
 
 .caja > .presentacion {
@@ -61,6 +60,7 @@ p {
     }
     .caja > .avatar {
         border-radius: 10px 10px 0 0;
+        border-right: 3px solid #1561f0;
         border-bottom: none;
     }
     .caja > .presentacion {
